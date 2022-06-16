@@ -18,3 +18,44 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+body,
+html {
+  height: 100%;
+  /*FireFox*/
+  scrollbar-width: none;
+  /*IE10+*/
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+html::-webkit-scrollbar {
+  /*Chrome, Safari, Edge*/
+  display: none;
+}
+
+.bg {
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 640px) {
+  .logo {
+    width: 223px;
+    height: 74.2px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .logo {
+    width: 318px;
+    height: 106px;
+  }
+}
